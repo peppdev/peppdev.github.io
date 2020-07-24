@@ -135,7 +135,7 @@
 .headerbutton:focus {
     outline: none;
     box-shadow: none;
-  }
+}
 
 .banner {
     top: 10vh;
