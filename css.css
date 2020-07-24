@@ -1,4 +1,6 @@
-
+html {
+    background-color: rgb(20, 20, 20);
+}
 @keyframes HeaderAnimationStart {
     0% {height: 6vh;}
     100% {height: 10vh;}
@@ -81,7 +83,7 @@
 }
 .bar {
     z-index: 9;
-    height: 5vh;
+    height: 6vh;
     width: 100%;
     background-color: rgb(30, 30, 30);
     animation-name: HeaderAnimationStart;
@@ -135,7 +137,8 @@
 .headerbutton:focus {
     outline: none;
     box-shadow: none;
-}
+  }
+
 .banner {
     top: 10vh;
     text-align: center;
@@ -146,4 +149,22 @@
     background-image: url("IMAGE/header.png");
     background-size: cover;
     color: white;
+}
+#about {
+    font-family: "Bebas Neue", cursive;
+    position: relative;
+    top: 10vh;
+    width: 100vw;
+    height: 45vh;
+    background-color: rgb(25, 25, 25);
+}
+#robot {
+    position: relative;
+    float: right;
+    right: 10vh;
+    top: 8vh;
+    height: 30vh;
+    width: 30vh;
+    background-image: url("IMAGE/robot.png");
+    background-size: cover;
 }
