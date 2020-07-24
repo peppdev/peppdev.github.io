@@ -34,7 +34,42 @@
         font-size: 2vh;
     }
 }
-
+@keyframes ButtonAnimationStart {
+    0% {
+        margin-right: 1vh;
+        top: 1vh;
+        width: 10vh;
+        height: 4vh;
+        font-size: 2vh;
+        border-radius: 5px;
+    }
+    100% {
+        margin-right: 1vh;
+        top: 1vh;
+        width: 20vh;
+        height: 8vh;
+        font-size: 4vh;
+        border-radius: 5px;
+    }
+}
+@keyframes ButtonAnimationEnd {
+    0% {
+        margin-right: 1vh;
+        top: 1vh;
+        width: 20vh;
+        height: 8vh;
+        font-size: 4vh;
+        border-radius: 5px;
+    }
+    100% {
+        margin-right: 1vh;
+        top: 1vh;
+        width: 10vh;
+        height: 4vh;
+        font-size: 2vh;
+        border-radius: 5px;
+    }
+}
 .bar {
     height: 5vh;
     width: 100%;
@@ -64,3 +99,30 @@
     animation-duration: 0.2s;
     animation-fill-mode: forwards;
 }
+.headerbutton {
+    float: right;
+    margin-right: 1vh;
+    top: 1vh;
+    position: relative;
+    width: 20vh;
+    height: 8vh;
+    font-family: "Bebas Neue", cursive;
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    background-color: rgb(20, 20, 20);
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    animation-name: ButtonAnimationStart;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+}
+.headerbutton:hover {
+    background-color: rgb(40, 40, 40);
+    cursor: pointer;
+}
+.headerbutton:focus {
+    outline: none;
+    box-shadow: none;
+  }

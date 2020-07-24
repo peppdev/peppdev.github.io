@@ -3,10 +3,12 @@
     <head>
         <link rel = "stylesheet", href = "css.css" />
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+        <title>Discord Bots UK</title>
     </head>
     <body style = "margin: 0;">
         <div class = "bar">
             <span>discordbots UK</span>
+            <button class = "headerbutton" onclick = "window.scrollTo(0, 100)">Purchase</button>
         </div>
         <img src = "IMAGE/header.png">
         <img src = "IMAGE/header.png">
@@ -28,13 +30,17 @@
         const scroll = window.scrollY;
         const bar = document.getElementsByClassName("bar")[0];
         const title = document.getElementsByTagName("span")[0];
+        const purchase = document.getElementsByClassName("headerbutton")[0];
+        console.log(purchase)
         if (scroll == 0) {
             bar.style.animationName = "HeaderAnimationStart";
             title.style.animationName = "TextAnimationStart";
+            purchase.style.animationName = "ButtonAnimationStart";
         }
         else {
             bar.style.animationName = "HeaderAnimationEnd";
             title.style.animationName = "TextAnimationEnd";
+            purchase.style.animationName = "ButtonAnimationEnd";
         }
     }
 </script>
