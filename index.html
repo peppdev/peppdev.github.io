@@ -19,6 +19,10 @@
 <script>
     window.onscroll = function() { CheckIfAtTop() }
 
+    if (window.innerHeight > window.innerWidth) {
+        alert("It's advised to use landscape mode on this site.\nIf you don't some things may not scale correctly. We're working on fixing this. Sorry!")
+    }
+
     function CheckIfAtTop()
     {
         const scroll = window.scrollY;
